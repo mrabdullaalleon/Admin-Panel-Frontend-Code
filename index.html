@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-<title>Peo Developer · Elite Admin Panel</title>
+<title>Admin Panel</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
@@ -662,7 +662,7 @@ input[type="color"]::-webkit-color-swatch{border:2px solid var(--glass-border);b
     <div class="card-glass">
       <form id="generalSettingsForm">
         <div class="form-row">
-          <div><label class="required">Site Title</label><input class="input-glass" id="gSiteTitle" value="Peo Developer — Premium &amp; Free Source Code"></div>
+          <div><label class="required">Site Title</label><input class="input-glass" id="gSiteTitle" value="Peo Developer Â— Premium &amp; Free Source Code"></div>
           <div><label class="required">Currency</label><input class="input-glass" id="gCurrency" value="USD"></div>
         </div>
         <div class="form-row">
@@ -728,7 +728,7 @@ input[type="color"]::-webkit-color-swatch{border:2px solid var(--glass-border);b
       </div>
       <div class="form-row">
         <div>
-          <label>Website Favicon (32×32)</label>
+          <label>Website Favicon (32Ã—32)</label>
           <div class="uploader-box" id="favUploadBox">
             <div class="uploader-preview" id="favPreviewBox"><i class="fas fa-cube"></i></div>
             <p style="font-size:.78rem;color:var(--text-muted)"><i class="fas fa-cloud-arrow-up"></i> Click to upload</p>
@@ -977,7 +977,7 @@ input[type="color"]::-webkit-color-swatch{border:2px solid var(--glass-border);b
     <div class="page-header"><h3><i class="fas fa-magnifying-glass"></i> SEO &amp; Meta Configuration</h3><button class="btn-glass backToSettingsBtn"><i class="fas fa-arrow-left"></i> Back to Settings</button></div>
     <div class="flex-panel" style="display:flex;gap:1.2rem;flex-wrap:wrap">
       <div class="card-glass" style="flex:1.5;min-width:300px">
-        <div class="form-group"><label>Meta Title</label><input class="input-glass" id="seoMetaTitle" value="Peo Developer — Premium &amp; Free Source Code Marketplace"></div>
+        <div class="form-group"><label>Meta Title</label><input class="input-glass" id="seoMetaTitle" value="Peo Developer Â— Premium &amp; Free Source Code Marketplace"></div>
         <div class="form-group"><label>Meta Description</label><textarea class="textarea-glass" id="seoMetaDesc" style="min-height:80px">Discover, preview, and download high-quality free and paid source code.</textarea></div>
         <div class="form-group">
           <label>Keywords</label>
@@ -1001,7 +1001,7 @@ input[type="color"]::-webkit-color-swatch{border:2px solid var(--glass-border);b
         <h4><i class="fas fa-desktop"></i> Google Preview</h4>
         <div class="preview-pane">
           <div class="pp-url">https://peodeveloper.com</div>
-          <div class="pp-title" id="serpTitle">Peo Developer — Premium &amp; Free Source Code Marketplace</div>
+          <div class="pp-title" id="serpTitle">Peo Developer Â— Premium &amp; Free Source Code Marketplace</div>
           <div class="pp-desc" id="serpDesc">Discover, preview, and download high-quality free and paid source code.</div>
         </div>
       </div>
@@ -1033,15 +1033,15 @@ input[type="color"]::-webkit-color-swatch{border:2px solid var(--glass-border);b
     <div class="card-glass">
       <div class="form-row">
         <div><label>Google Client ID</label><input class="input-glass" id="slGoogleId" placeholder="xxxx.apps.googleusercontent.com"></div>
-        <div><label>Google Client Secret</label><input class="input-glass" id="slGoogleSecret" type="password" placeholder="••••••••"></div>
+        <div><label>Google Client Secret</label><input class="input-glass" id="slGoogleSecret" type="password" placeholder="Â•Â•Â•Â•Â•Â•Â•Â•"></div>
       </div>
       <div class="form-row">
         <div><label>GitHub Client ID</label><input class="input-glass" id="slGithubId" placeholder="Iv1.xxxx"></div>
-        <div><label>GitHub Client Secret</label><input class="input-glass" id="slGithubSecret" type="password" placeholder="••••••••"></div>
+        <div><label>GitHub Client Secret</label><input class="input-glass" id="slGithubSecret" type="password" placeholder="Â•Â•Â•Â•Â•Â•Â•Â•"></div>
       </div>
       <div class="form-row">
         <div><label>Facebook App ID</label><input class="input-glass" id="slFbId" placeholder="1234567890"></div>
-        <div><label>Facebook App Secret</label><input class="input-glass" id="slFbSecret" type="password" placeholder="••••••••"></div>
+        <div><label>Facebook App Secret</label><input class="input-glass" id="slFbSecret" type="password" placeholder="Â•Â•Â•Â•Â•Â•Â•Â•"></div>
       </div>
       <div class="form-row">
         <div><label>Callback URL</label><input class="input-glass" id="slCallback" value="https://peodeveloper.com/auth/callback"></div>
@@ -1507,7 +1507,7 @@ Sitemap: https://peodeveloper.com/sitemap.xml</textarea></div>
   <div class="modal-actions"><button type="button" class="btn-glass" id="cancelTicketBtn">Cancel</button><button type="submit" class="btn-glass neon-btn"><i class="fas fa-save"></i> Update Ticket</button></div>
 </form></div></div>
 
-<div class="modal-overlay" id="rejectModal"><div class="modal-box" style="max-width:500px"><div class="close-modal" id="closeRejectModal"><i class="fas fa-xmark"></i></div><h3><i class="fas fa-circle-xmark" style="color:#f87171"></i> Reject Reason</h3><p style="font-size:.78rem;color:var(--text-muted);margin-bottom:1rem">Optional — leave empty to reject without a reason.</p><form id="rejectForm"><div class="form-group"><label>Reason</label><textarea class="textarea-glass" id="rejectReason" style="min-height:80px"></textarea></div><div class="modal-actions"><button type="button" class="btn-glass" id="cancelRejectBtn">Cancel</button><button type="submit" class="btn-glass neon-btn"><i class="fas fa-check"></i> Confirm Reject</button></div></form></div></div>
+<div class="modal-overlay" id="rejectModal"><div class="modal-box" style="max-width:500px"><div class="close-modal" id="closeRejectModal"><i class="fas fa-xmark"></i></div><h3><i class="fas fa-circle-xmark" style="color:#f87171"></i> Reject Reason</h3><p style="font-size:.78rem;color:var(--text-muted);margin-bottom:1rem">Optional Â— leave empty to reject without a reason.</p><form id="rejectForm"><div class="form-group"><label>Reason</label><textarea class="textarea-glass" id="rejectReason" style="min-height:80px"></textarea></div><div class="modal-actions"><button type="button" class="btn-glass" id="cancelRejectBtn">Cancel</button><button type="submit" class="btn-glass neon-btn"><i class="fas fa-check"></i> Confirm Reject</button></div></form></div></div>
 
 <div class="modal-overlay" id="categoryModal"><div class="modal-box" style="max-width:600px"><div class="close-modal" id="closeCategoryModal"><i class="fas fa-xmark"></i></div><h3><i class="fas fa-layer-group"></i> <span id="categoryModalTitle">Add Category</span></h3><form id="categoryForm"><input type="hidden" id="catEditId" value="">
   <div class="form-group"><label>Category Logo</label><div class="uploader-box" id="catLogoBox" style="max-width:180px;margin:0 auto"><div class="uploader-preview" id="catLogoPreview"><i class="fas fa-layer-group"></i></div><p style="font-size:.72rem;color:var(--text-muted)">Click to upload</p><input type="file" id="catLogoInput" accept=".png,.jpg,.jpeg" style="display:none"></div></div>
@@ -1657,7 +1657,7 @@ const DB = {
   ],
   currentAdminId: 1,
   topBar: {enabled:true,items:[
-    {id:1,type:'scrolling-text',text:' Welcome to Peo Developer — Get 20% OFF on premium source codes!',direction:'rtl',speed:20,textColor:'#e8edf5',bgColor:'#0a0f1a',align:'center',order:0,active:true},
+    {id:1,type:'scrolling-text',text:' Welcome to Peo Developer Â— Get 20% OFF on premium source codes!',direction:'rtl',speed:20,textColor:'#e8edf5',bgColor:'#0a0f1a',align:'center',order:0,active:true},
     {id:2,type:'phone',text:'+880 1700 000 000',textColor:'#e8edf5',bgColor:'#0a0f1a',align:'right',order:1,active:true}
   ]},
   footer: {
@@ -1709,7 +1709,7 @@ const DB = {
     {id:3,type:'textarea',label:'Message',placeholder:'Your message',required:true,active:true,width:'full'}
   ],
   businessHours: [
-    {id:1,day:'Monday — Friday',time:'9:00 – 18:00',closed:false},
+    {id:1,day:'Monday Â— Friday',time:'9:00 Â– 18:00',closed:false},
     {id:2,day:'Sunday',time:'Closed',closed:true}
   ],
   location: {heading:'Our Location',address:'Dhaka, Bangladesh',btnText:'Get Directions',btnUrl:'https://maps.google.com',mapUrl:''},
@@ -2053,7 +2053,7 @@ function renderProducts(){
     '<td><img src="'+esc(p.thumb)+'" style="width:50px;height:35px;object-fit:cover;border-radius:8px;cursor:zoom-in" onclick="openImageZoom(\''+esc(p.thumb)+'\')"></td>'+
     '<td><strong>'+esc(p.title)+'</strong></td>'+
     '<td>'+esc(p.category)+'</td>'+
-    '<td>'+esc(p.subcategory||'—')+'</td>'+
+    '<td>'+esc(p.subcategory||'Â—')+'</td>'+
     '<td><span class="badge '+(p.type==='free'?'badge-success':'badge-warning')+'">'+p.type.toUpperCase()+'</span></td>'+
     '<td>'+(p.type==='free'?'<span style="color:#34d399">FREE</span>':'$'+p.price)+'</td>'+
     '<td><span class="badge '+(p.active?'badge-success':'badge-secondary')+'">'+(p.active?'Active':'Inactive')+'</span></td>'+
@@ -2218,7 +2218,7 @@ function renderUsers(){
     '<td class="data-table-checkbox"><input type="checkbox" class="table-checkbox usrSel" data-id="'+u.id+'" '+(State.userSelected.has(u.id)?'checked':'')+'></td>'+
     '<td><strong>'+esc(u.name)+'</strong></td>'+
     '<td>'+esc(u.email)+'</td>'+
-    '<td>'+esc(u.phone||'—')+'</td>'+
+    '<td>'+esc(u.phone||'Â—')+'</td>'+
     '<td><strong style="color:#34d399">'+esc(u.balance)+'</strong></td>'+
     '<td><span class="badge '+(u.kyc==='verified'?'badge-success':u.kyc==='rejected'?'badge-danger':'badge-warning')+'">'+u.kyc.toUpperCase()+'</span></td>'+
     '<td><span class="badge '+(u.status==='active'?'badge-success':'badge-danger')+'">'+u.status.toUpperCase()+'</span></td>'+
@@ -2444,7 +2444,7 @@ function renderSlides(){
     '</div>'+
     '<img src="'+esc(s.image)+'" style="width:100%;height:120px;object-fit:cover;border-radius:10px;cursor:zoom-in" onclick="openImageZoom(\''+esc(s.image)+'\')">'+
     '<div class="item-title">'+esc(s.title)+'</div>'+
-    '<div class="item-sub">Badge: '+esc(s.badge||'—')+' · Buttons: '+(s.buttons||[]).length+'</div>'+
+    '<div class="item-sub">Badge: '+esc(s.badge||'Â—')+' Â· Buttons: '+(s.buttons||[]).length+'</div>'+
     '<div class="item-actions">'+
       '<label class="toggle-switch" style="transform:scale(.75)"><input type="checkbox" '+(s.status==='active'?'checked':'')+' data-slide-toggle="'+s.id+'"><span class="slider"></span></label>'+
       '<button class="btn-glass btn-sm editSlide" data-id="'+s.id+'"><i class="fas fa-pen"></i> Edit</button>'+
@@ -2462,7 +2462,7 @@ function renderSlides(){
 window.__RENDERERS.slider = renderSlides;
 
 function renderSlideButtons(list, slideId){
-  list.innerHTML = (list._slideButtons||[]).map(b=>'<div style="display:grid;grid-template-columns:2fr 3fr 1fr 1fr auto;gap:.5rem;align-items:center;background:var(--input-bg);padding:.6rem;border-radius:10px;border:1px solid var(--glass-border);margin-bottom:.4rem"><input class="input-glass" value="'+esc(b.text)+'" readonly style="font-size:.75rem;padding:.4rem .6rem"><input class="input-glass" value="'+esc(b.url||'')+'" readonly style="font-size:.75rem;padding:.4rem .6rem"><span class="badge badge-info" style="font-size:.65rem">'+esc(b.type||'primary')+'</span><span class="badge '+(b.active?'badge-success':'badge-secondary')+'" style="font-size:.65rem">'+(b.active?'On':'Off')+'</span><button type="button" class="btn-glass btn-sm editSbBtn" data-id="'+b.id+'"><i class="fas fa-pen"></i></button></div>').join('') || '<p style="font-size:.75rem;color:var(--text-muted);padding:.5rem">No buttons yet — click Add Button</p>';
+  list.innerHTML = (list._slideButtons||[]).map(b=>'<div style="display:grid;grid-template-columns:2fr 3fr 1fr 1fr auto;gap:.5rem;align-items:center;background:var(--input-bg);padding:.6rem;border-radius:10px;border:1px solid var(--glass-border);margin-bottom:.4rem"><input class="input-glass" value="'+esc(b.text)+'" readonly style="font-size:.75rem;padding:.4rem .6rem"><input class="input-glass" value="'+esc(b.url||'')+'" readonly style="font-size:.75rem;padding:.4rem .6rem"><span class="badge badge-info" style="font-size:.65rem">'+esc(b.type||'primary')+'</span><span class="badge '+(b.active?'badge-success':'badge-secondary')+'" style="font-size:.65rem">'+(b.active?'On':'Off')+'</span><button type="button" class="btn-glass btn-sm editSbBtn" data-id="'+b.id+'"><i class="fas fa-pen"></i></button></div>').join('') || '<p style="font-size:.75rem;color:var(--text-muted);padding:.5rem">No buttons yet Â— click Add Button</p>';
   list.querySelectorAll('.editSbBtn').forEach(btn=>btn.onclick=()=>openSlideButtonModal(parseInt(btn.dataset.id)));
 }
 let currentEditingSlideButtons = [];
@@ -2614,7 +2614,7 @@ function renderCoupons(){
     '<td>'+c.type+'</td>'+
     '<td>'+(c.type==='percentage'?c.value+'%':'$'+c.value)+'</td>'+
     '<td>'+c.used+' / '+(c.usageLimit||'')+'</td>'+
-    '<td>'+(c.endDate||'—')+'</td>'+
+    '<td>'+(c.endDate||'Â—')+'</td>'+
     '<td><span class="badge '+(c.status==='active'?'badge-success':'badge-secondary')+'">'+c.status.toUpperCase()+'</span></td>'+
     '<td style="display:flex;gap:.3rem">'+
       '<button class="btn-glass btn-sm editCpn" data-id="'+c.id+'"><i class="fas fa-pen"></i></button>'+
@@ -2658,7 +2658,7 @@ function renderTickets(){
   const openCount = DB.tickets.filter(t=>t.status==='open').length;
   const navBadge = $('#ticketNavBadge'); if(navBadge) navBadge.textContent = openCount;
   if(!list.length){c.innerHTML='<div class="empty-state"><i class="fas fa-headset"></i>No tickets</div>';return;}
-  c.innerHTML = list.map(t=>'<div class="card-glass" style="padding:1rem"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem"><div><div style="font-weight:600">'+esc(t.subject)+'</div><div style="font-size:.72rem;color:var(--text-muted)">'+esc(t.id)+' · '+esc(t.user)+' · '+esc(t.created)+'</div></div><div style="display:flex;gap:.4rem;align-items:center"><span class="badge '+(t.priority==='high'?'badge-danger':t.priority==='medium'?'badge-warning':'badge-info')+'">'+t.priority+'</span><span class="badge '+(t.status==='open'?'badge-info':t.status==='pending'?'badge-warning':'badge-secondary')+'">'+t.status.toUpperCase()+'</span><button class="btn-glass btn-sm editTkt" data-id="'+t.id+'"><i class="fas fa-pen"></i></button><button class="btn-glass btn-sm btn-danger delTkt" data-id="'+t.id+'"><i class="fas fa-trash"></i></button></div></div></div>').join('');
+  c.innerHTML = list.map(t=>'<div class="card-glass" style="padding:1rem"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem"><div><div style="font-weight:600">'+esc(t.subject)+'</div><div style="font-size:.72rem;color:var(--text-muted)">'+esc(t.id)+' Â· '+esc(t.user)+' Â· '+esc(t.created)+'</div></div><div style="display:flex;gap:.4rem;align-items:center"><span class="badge '+(t.priority==='high'?'badge-danger':t.priority==='medium'?'badge-warning':'badge-info')+'">'+t.priority+'</span><span class="badge '+(t.status==='open'?'badge-info':t.status==='pending'?'badge-warning':'badge-secondary')+'">'+t.status.toUpperCase()+'</span><button class="btn-glass btn-sm editTkt" data-id="'+t.id+'"><i class="fas fa-pen"></i></button><button class="btn-glass btn-sm btn-danger delTkt" data-id="'+t.id+'"><i class="fas fa-trash"></i></button></div></div></div>').join('');
   c.querySelectorAll('.editTkt').forEach(b=>b.onclick=()=>openTicketModal(b.dataset.id));
   c.querySelectorAll('.delTkt').forEach(b=>b.onclick=()=>{const id=b.dataset.id;askConfirm(()=>{DB.tickets=DB.tickets.filter(x=>x.id!==id);renderTickets();showToast('Ticket deleted','success');},'Delete this ticket?');});
 }
@@ -2763,7 +2763,7 @@ $('#adminForm').onsubmit=function(e){
       }
       showToast('Admin updated','success');
     }
-  } else {data.id=Date.now();data.lastLogin='—';DB.admins.push(data);showToast('Admin created','success');}
+  } else {data.id=Date.now();data.lastLogin='Â—';DB.admins.push(data);showToast('Admin created','success');}
   renderAdmins();updateDashboardStats();$('#adminModal').classList.remove('active');
 };
 
@@ -3137,7 +3137,7 @@ function renderTopBarPreview(){
       return '<div class="tp-scroll" style="color:'+esc(it.textColor)+';flex:1"><div class="tp-scroll-inner '+dir+'">'+esc(it.text)+'</div></div>';
     }
     return '<span style="color:'+esc(it.textColor)+';font-size:.75rem">'+esc(it.text)+'</span>';
-  }).join('<span style="color:var(--text-muted);padding:0 .6rem">·</span>');
+  }).join('<span style="color:var(--text-muted);padding:0 .6rem">Â·</span>');
   p.style.background = DB.topBar.items[0] ? DB.topBar.items[0].bgColor||'var(--input-bg)' : 'var(--input-bg)';
 }
 function renderTopBarItems(){
@@ -3256,7 +3256,7 @@ function renderFooterColumns(){
         '<button class="btn-glass btn-sm editLnk" data-col="'+col.id+'" data-link="'+link.id+'"><i class="fas fa-pen"></i></button>'+
         '<button class="btn-glass btn-sm btn-danger delLnk" data-col="'+col.id+'" data-link="'+link.id+'"><i class="fas fa-xmark"></i></button>'+
       '</div>').join('')+
-      ((col.links||[]).length===0?'<p style="font-size:.75rem;color:var(--text-muted);text-align:center;padding:.5rem">No links — click + to add</p>':'')+
+      ((col.links||[]).length===0?'<p style="font-size:.75rem;color:var(--text-muted);text-align:center;padding:.5rem">No links Â— click + to add</p>':'')+
     '</div>'+
   '</div>').join('');
   list.querySelectorAll('[data-col-toggle]').forEach(cb=>cb.onchange=function(){const c=DB.footer.columns.find(x=>x.id===parseInt(this.dataset.colToggle));if(c){c.active=this.checked;renderFooterPreview();showToast('Column '+(this.checked?'enabled':'hidden'),'success');}});
@@ -3732,7 +3732,7 @@ window.__RENDERERS['mf-contact'] = function(){ renderContactInfo(); renderContac
 function renderPolicies(){
   const g=$('#policiesGrid');if(!g)return;
   const sorted = DB.policies.slice().sort((a,b)=>(a.order||0)-(b.order||0));
-  g.innerHTML = sorted.map(p=>'<div class="item-card" data-policy-id="'+p.id+'"><div style="display:flex;justify-content:space-between"><span class="drag-handle"><i class="fas fa-grip-vertical"></i></span><span class="badge '+(p.active?'badge-success':'badge-secondary')+'">'+(p.active?'Active':'Disabled')+'</span></div><div class="item-head"><div class="item-icon"><i class="fas fa-file-contract"></i></div><div><div class="item-title">'+esc(p.title)+'</div><div class="item-sub">/'+esc(p.slug)+' · '+esc(p.lastUpdated)+'</div></div></div><div class="item-actions"><button class="btn-glass btn-sm editPo" data-id="'+p.id+'"><i class="fas fa-pen"></i> Edit</button><button class="btn-glass btn-sm btn-danger delPo" data-id="'+p.id+'"><i class="fas fa-trash"></i></button></div></div>').join('');
+  g.innerHTML = sorted.map(p=>'<div class="item-card" data-policy-id="'+p.id+'"><div style="display:flex;justify-content:space-between"><span class="drag-handle"><i class="fas fa-grip-vertical"></i></span><span class="badge '+(p.active?'badge-success':'badge-secondary')+'">'+(p.active?'Active':'Disabled')+'</span></div><div class="item-head"><div class="item-icon"><i class="fas fa-file-contract"></i></div><div><div class="item-title">'+esc(p.title)+'</div><div class="item-sub">/'+esc(p.slug)+' Â· '+esc(p.lastUpdated)+'</div></div></div><div class="item-actions"><button class="btn-glass btn-sm editPo" data-id="'+p.id+'"><i class="fas fa-pen"></i> Edit</button><button class="btn-glass btn-sm btn-danger delPo" data-id="'+p.id+'"><i class="fas fa-trash"></i></button></div></div>').join('');
   g.querySelectorAll('.editPo').forEach(b=>b.onclick=()=>openPolicyModal(parseInt(b.dataset.id)));
   g.querySelectorAll('.delPo').forEach(b=>b.onclick=()=>{const id=parseInt(b.dataset.id);askConfirm(()=>{DB.policies=DB.policies.filter(x=>x.id!==id);renderPolicies();},'Delete this policy?');});
   if(window.Sortable) new Sortable(g,{handle:'.drag-handle',animation:200,ghostClass:'sortable-ghost',onEnd:function(){const order=Array.from(g.querySelectorAll('[data-policy-id]')).map(el=>parseInt(el.dataset.policyId));order.forEach((id,idx)=>{const p=DB.policies.find(x=>x.id===id);if(p)p.order=idx;});showToast('Order updated','success');}});
@@ -3817,7 +3817,7 @@ window.__RENDERERS.webhooks = renderWebhooks;
 
 function renderBackups(){
   const c=$('#backupList');if(!c)return;
-  c.innerHTML = DB.backups.map(b=>'<div style="display:flex;align-items:center;gap:.6rem;background:var(--input-bg);padding:.8rem;border-radius:12px;margin-bottom:.5rem"><i class="fas fa-file-zipper" style="color:var(--primary-blue-light);font-size:1.2rem"></i><div style="flex:1"><div style="font-weight:600;font-size:.85rem">'+esc(b.name)+'</div><div style="font-size:.7rem;color:var(--text-muted)">'+esc(b.size)+' · '+esc(b.created)+'</div></div><button class="btn-glass btn-sm" onclick="showToast(\'Download started\',\'success\')"><i class="fas fa-download"></i></button><button class="btn-glass btn-sm btn-danger" onclick="window.__deleteBackup('+b.id+')"><i class="fas fa-trash"></i></button></div>').join('');
+  c.innerHTML = DB.backups.map(b=>'<div style="display:flex;align-items:center;gap:.6rem;background:var(--input-bg);padding:.8rem;border-radius:12px;margin-bottom:.5rem"><i class="fas fa-file-zipper" style="color:var(--primary-blue-light);font-size:1.2rem"></i><div style="flex:1"><div style="font-weight:600;font-size:.85rem">'+esc(b.name)+'</div><div style="font-size:.7rem;color:var(--text-muted)">'+esc(b.size)+' Â· '+esc(b.created)+'</div></div><button class="btn-glass btn-sm" onclick="showToast(\'Download started\',\'success\')"><i class="fas fa-download"></i></button><button class="btn-glass btn-sm btn-danger" onclick="window.__deleteBackup('+b.id+')"><i class="fas fa-trash"></i></button></div>').join('');
 }
 window.__deleteBackup=function(id){askConfirm(()=>{DB.backups=DB.backups.filter(x=>x.id!==id);renderBackups();});};
 $('#createBackupBtn') && ($('#createBackupBtn').onclick=()=>{
